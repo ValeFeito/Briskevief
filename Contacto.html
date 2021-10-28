@@ -11,12 +11,13 @@
     <Link rel="stylesheet" href="./estilo/estilo.css"></Link:css>
     <!-- para que aparezcan los iconos que uso en el pie de pagina para navegar -->
     <script src="https:kit.fontawesome.com/7b27addec7.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 </head>
 
 
 <body>
-
+    <div class="contenedor">
     <div id="main"> 
    
     <div id="header"><H1>Briske Vief</H1></div>
@@ -28,7 +29,7 @@
                 <li><a href="./Personales.html">Personales</a></li>
                 <li><a href="./Corporativos.html">Corporativos</a></li>
                 <li><a href="./Contacto.html">Contacto</a></li>
-              </ul>
+            </ul>
           </nav>
     </div>
 
@@ -43,22 +44,22 @@
           </li>
           <li><a href="./Index.html">Inicio</a></li>
           <li><a href="./Nosotros.html">Nosotras</a></li>
-          <li><a href="./Personales.html">Corporativos</a></li>
+          <li><a href="./Personales.html">Personales</a></li>
           <li><a href="./Corporativos.html">Corporativos</a></li>
           <li><a href="./Contacto.html">Contacto</a></li>
           <li>
             <div>
               <br><br>
               <img class="phone" id="animacion" src="./Imagenes/phone.png" alt="phone" width="80" title="Asesorate">
-              <p>11 6473-7652<br>11 5957-4507</p>
+              <p> <a href="https://chat.whatsapp.com/DuuXc5iNCu45EakWD23Jgj" target="blank">11 6473-7652<br>11 5957-4507</a></p>
             </div>
           </li>
         </ul>
       </div>   
     </div>
-    <script src="./Js/Js.js"></script>
     
-    <div id="maps">
+    
+    <div id="maps" class="maps">
         <div class="direccion">
             <article>
                 <P> <span> <b> <h2>Briske Vief</h2> </b> </span> <br> 11 5957-4507 - 11 6473-7652 <br>Nueva York N°4900 - Villa Devoto</P>
@@ -75,28 +76,39 @@
             <article>
         </div>
     </div>
-    <div id="form">
+
+    <div id="form" class="form">
         <article>
         <div class="formulario" id="formulario"> 
             <h2>Pedí tu Asesoramiento <br> </h2>
-                <form action="./show_data.html" target="_blank">
-                    <label><br><input type="text" name="nombre" required size="50" maxlength="50" placeholder="Nombre*"><br>
-                    <label for="Birthday"> <br></i><input type="date"name="fecha" size="11" maxlength="15"> <i class="fas fa-birthday-cake"></i><br>
-                    <label><br></i><input type="text" name="telefono" required size="11" maxlength="17" placeholder="Teléfono*"><br>
-                    <label><br></i><input type="email" name="email" size="50" maxlength="30" placeholder="email*"><br>
+                <form action="" method="" id="un_formulario">
+                    <div>
+                    <label for="nombre" class="titulo"><br>
+                    <input type="text" name="nombre" id="nombre" required size="40" maxlength="40" placeholder="Nombre*"><br>
+                    <label for="Birthday"> <br>
+                    <input type="date"name="fecha" size="11" maxlength="15"> <br>
+                    <label for="tel" class="titulo"><br>
+                    <input type="tel" name="telefono" id="tel" required size="20" maxlength="17" placeholder="Teléfono*"> <br>
+                    <label for="mail"></label><br>
+                    <input type="email" name="email" id="email" size="40" maxlength="30" placeholder="email*"><br>
                     <br>
-                    <textarea name="dejanos tu comentario" id="comentario" cols="60" rows="10" placeholder=" Escribe tu consulta..."></textarea>
+                    <textarea name="dejanos tu comentario" id="comentario" cols="41" rows="10" placeholder=" Escribe tu consulta..."></textarea>
                     </label> 
                     <br>
-                    <input id="button" type="reset" value="BORRAR">
-                    <input id="button"  type="submit" value="ENVIAR">
+                    <span>
+                        <p id="mensaje_error"></p>
+                          <input type="submit" name="enviar" id="enviar" value="ENVIAR">
+                          <input type="reset" name="borrar" id="borrar" value="BORRAR">
+                        </span>
                     <br>
+                </div>
                 </form>
-                    <br>
+                <br>
         </div>
+        
         </article>
-
     </div>
+
     <div id="footer">
         <P>© Copyright 2023 Fashion Frenzy Co. No animals were harmed in the making. Please think the environment before printing. You make a difference.
         </P>
@@ -109,7 +121,9 @@
     </div>
 
     </div>
+    </div>
 
+    <script src="Js/sidebar.js"></script>
 </body>
 
 </html>
