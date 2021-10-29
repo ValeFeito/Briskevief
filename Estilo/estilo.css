@@ -348,6 +348,7 @@ iframe {
     color:beige;
     border-radius: 20px;
     font-size: 14px;
+    margin: 1% 0% 5% 5%;
   }
 
   #Vief {
@@ -400,6 +401,7 @@ iframe {
   }
   .menuitem {
     max-width: calc(94% /1); 
+    margin: 1% 0% 5% 5%;
   }
 
   #Vief {
