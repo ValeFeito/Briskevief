@@ -453,3 +453,28 @@ iframe {
   }
 
 }
+
+/*REGISTRO*/
+.container { 
+  background:#F0161D; 
+  grid-column: 1/6;
+  grid-row: 3/4;
+  border-radius: 20px;
+  margin: 0% 8% 0% 8.5%;
+  padding: 6%;
+  text-align: center; 
+}
+
+.invalid-feedback {
+  color: beige;
+
+}
+
+.form-check-label {
+  color: beige;
+}
+
+#term {
+  color: rgb(19, 44, 112);
+}
+
